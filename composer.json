@@ -1,0 +1,20 @@
+{
+    "name": "jced-artem/lock-service",
+    "type": "library",
+    "description": "Symfony LockHandler analog, but for multi-server architecture.",
+    "keywords": ["lock", "handler", "service", "helper"],
+    "homepage": "https://github.com/jced-artem",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Jced",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "symfony/filesystem": "*"
+    },
+    "require-dev": {
+        "symfony/filesystem": "*"
+    }
+}
