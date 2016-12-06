@@ -3,6 +3,7 @@
 namespace Jced;
 
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Filesystem\Exception\IOException;
 
 /**
  * Class LockService
