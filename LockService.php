@@ -66,10 +66,11 @@ class LockService
     public function lock($name)
     {
         $file = $this->getFilePath($name);
-        if ($this->fileSystem->exists($file)) {
+        $handler = @fopen($file, 'xb');
+        if (!$handler) {
             return false;
         }
-        $this->fileSystem->touch($file);
+        fclose($handler);
         return true;
     }
 
